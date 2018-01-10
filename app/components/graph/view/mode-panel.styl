@@ -1,0 +1,45 @@
+@import '../../../styles/global'
+
+.mode-panel
+  position absolute
+  left 0
+  right 0
+  top 0
+  margin 7px
+  background-color gray
+  z-index 1000
+
+.mode-list
+  plainlist(true)
+
+.mode-list-item-secondary
+  float right
+
+.mode-button
+  button()
+  width 80px
+  height 45px
+  &.state-active
+    color color-background-highlight
+    font-weight bold
+    background-color #222
+    .icon-shape
+      fill color-background-highlight
+    .icon-stroke
+      stroke color-background-highlight
+  .icon-shape
+    fill #fff
+    transform scale(0.8)
+    transform-origin 50% 50%
+  .icon-stroke
+    stroke #fff
+    transform scale(0.8)
+    transform-origin 50% 50%
+
+  .icon-shape.danger
+    fill #d00
+    stroke #fff
+    stroke-width 10%
+    paint-order stroke
+
+

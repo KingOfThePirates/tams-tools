@@ -1,0 +1,88 @@
+@import '../../../styles/global'
+
+[data-background]
+  pointer-events all
+
+.graph-edge-line-background
+  pointer-events all
+
+.graph-edge-label-background
+  stroke white
+  stroke-width 10px
+  stroke-linecap round
+  stroke-linejoin round
+
+.graph-edge-line
+  stroke color-background-inverse
+
+.graph-edge-head
+  fill color-background-inverse
+
+.graph-node-circle
+  fill color-foreground-inverse
+  stroke color-background-secondary-strong
+
+.graph-node-label
+  fill color-foreground-primary
+
+.graph-node-label-background
+  stroke-width 20px
+  stroke color-foreground-inverse
+  stroke-linejoin round
+
+.state-selected
+  .graph-node-circle
+  .graph-edge-line-background
+    stroke-width 20px
+    stroke color-focus
+    stroke-linecap round
+    stroke-linejoin round
+  .graph-edge-label
+    fill darken(color-focus, 30%)
+  .graph-edge-label-background
+    stroke tint(color-focus, 80%)
+
+.state-transient
+  &, >*
+    pointer-events none
+  .graph-node-circle
+    opacity 0.7
+    stroke-dasharray 14,14
+  .graph-edge-line
+    stroke-width 14
+  .graph-edge-head
+    stroke-width 20
+
+  &.state-valid
+    .graph-edge-line
+      stroke color-success
+    .graph-edge-head
+      fill color-success
+      stroke color-success
+
+  &.state-invalid
+    .graph-edge-line
+      stroke-dasharray 14,14
+      stroke color-failure
+    .graph-edge-head
+      fill color-failure
+      stroke color-failure
+
+[data-action]
+  pointer-events all
+
+[data-action="none"]
+  pointer-events none
+  *
+    pointer-events none
+
+[data-action="move"]
+  cursor move
+
+[data-transient-edge]
+[data-action="connect"]
+  cursor alias
+
+[data-background="create"]
+  cursor copy
+

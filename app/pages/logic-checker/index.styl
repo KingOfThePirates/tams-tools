@@ -1,0 +1,79 @@
+@import '../../styles/app'
+@import '../../components/table/view/index.styl'
+
+h1
+h2
+  text-align center
+
+.column
+  float left
+  width 50%
+  box-sizing border-box
+  padding space(1)
+
+.result
+  clear both
+  margin space(1)
+  font-size font-size-medium
+
+.error
+  padding space(1)
+  background-color tint(red, 75%)
+
+.warning
+  padding space(1)
+  background-color tint(orange, 75%)
+
+.warning-details
+  margin 0
+  padding 0
+
+.comparison-list
+  plainlist()
+  margin-top space(1)
+
+.comparison-list-item
+  padding space(1)
+  margin space(0.1) 0
+  background-color color-background-secondary-weak
+  border-left 3px solid color-background-secondary-weak
+
+  &.state-success
+    border-left-color lighten(color-success, 10%)
+  &.state-fail
+    border-left-color color-failure
+
+.comparison-head
+  font-weight bold
+
+.comparison-result
+  font-size font-size-big
+  &.state-success
+    color lighten(color-success, 10%)
+  &.state-fail
+    color color-failure
+
+.table
+  font-size font-size-medium
+  color #000
+  margin space(1) 0
+
+.table-head-cell
+  border-color color-background-secondary-weak
+
+.table-body-cell
+  font-weight normal
+  cursor default
+
+.table-body-row
+  cursor default
+  &:hover
+    .table-body-cell
+      background-color transparent
+
+  &.difference
+    .table-body-cell.marked
+      background-color lighten(color-failure, 80%)
+      color color-failure
+      font-weight bold
+

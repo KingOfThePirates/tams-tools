@@ -1,0 +1,43 @@
+.gate-body
+.gate-input-extension
+  stroke-width  2
+  stroke-linecap butt
+  stroke-linejoin round
+  stroke-miterlimit 4
+  fill #eee
+
+.state-highlight > .gate-body
+  fill #aaa
+
+.gate-body[stroke]
+  stroke-width 5
+
+.gate-omitted
+  stroke-width 10px
+
+.signal-name
+  font-size 25px
+  font-weight bold
+
+.gate-body:not([stroke])
+.gate-input-extension
+  stroke #333
+
+.wire
+.gate-port
+.gate-body-extra
+  stroke-width  1.5
+  stroke-linecap round
+  stroke-linejoin round
+  stroke-miterlimit 4
+  fill none
+  stroke #333
+  stroke-location outside
+
+.wire-soder
+  fill #333
+  r 2.5
+
+.gate-input-extension
+  stroke-linecap square
+

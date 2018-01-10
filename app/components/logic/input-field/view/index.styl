@@ -1,0 +1,133 @@
+@import '../../../../styles/global'
+
+.logic-panel
+  overflow hidden
+  clear both
+
+.logic-panel-body
+  background-color color-background-primary-weak
+  padding 5px
+
+.logic-language-chooser
+  padding 5px 0 10px
+  display block
+  float left
+
+.logic-language-chooser-label
+  padding-right 10px
+  padding-left 5px
+  font-size font-size-default
+
+.logic-input
+  clear both
+  font-size font-size-big
+  font-family font-sans
+  color color-foreground-primary
+  border 1px solid color-background-secondary-strong
+  position relative
+  max-height 10em
+  overflow auto
+  line-height 1.4
+
+.logic-input-field
+  display block
+  font-family inherit
+  font-size inherit
+  border none
+  display block
+  max-width 100%
+  min-width 100%
+  width 100%
+  outline none
+  resize none
+  overflow hidden
+
+.logic-input-field
+  box-sizing border-box
+  line-height inherit
+  font-size inherit
+  letter-spacing inherit
+  white-space pre-wrap
+  word-wrap break-word
+  vertical-align top
+  padding 5px
+  height 1.8em
+.logic-input-overlay
+  box-sizing border-box
+  line-height inherit
+  font-size inherit
+  letter-spacing inherit
+  word-wrap break-word
+  white-space pre-wrap
+  padding 5px
+  z-index 1
+  max-width 100%
+  top 0
+  left 0
+  right 0
+  position absolute
+  pointer-events none
+  display block
+  vertical-align top
+  color transparent
+
+
+.overlay-text-marker
+  display inline
+  z-index 100
+  color inherit
+  padding 0 0 0
+  margin 0 -1px
+  background rgba(200,200,200,0.2)
+  border 1px solid #aaa
+  color inherit
+  border-radius 3px
+
+.text-marker-error
+  background-color rgba(200,0,0,0.2)
+  border-color #ffaaaa
+
+.text-marker-warning
+  background-color rgba(200,180,0,0.2)
+  border-color #fff8aa
+
+
+.error-box
+  margin-top 5px
+  padding 10px
+  background-color tint(red, 95%)
+  color darkred
+
+.error-box-title
+  margin 0
+  padding 0
+  font-size 16px
+  line-height 1
+  display inline
+
+  &::after
+    content ': '
+
+.error-body
+  display inline
+
+
+.complete-panel
+  padding 0
+  float right
+
+.completion-button
+  margin 0.2em 0 0.2em 5px
+  background-color #7F7F7F
+  color #fff
+  border none
+  border 2px solid transparent
+  height 1.8em
+  line-height 1
+  outline 0
+  &:hover
+    background-color #8D8D8D
+  &:active
+    background-color #757575
+  &:focus
+    border-color color-focus

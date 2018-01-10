@@ -1,0 +1,54 @@
+{
+    "inputs": [
+        "Z0",
+        "Z1"
+    ],
+    "loops": [],
+    "outputs": [
+        {
+            "name": "Z0+",
+            "values": [
+                true,
+                false,
+                true,
+                false
+            ]
+        },
+        {
+            "name": "Z1+",
+            "values": [
+                false,
+                true,
+                true,
+                false
+            ]
+        },
+        {
+            "name": "Red",
+            "values": [
+                true,
+                true,
+                false,
+                false
+            ]
+        },
+        {
+            "name": "Yellow",
+            "values": [
+                false,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "name": "Green",
+            "values": [
+                false,
+                false,
+                true,
+                false
+            ]
+        }
+    ]
+}
